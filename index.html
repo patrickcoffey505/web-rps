@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JS Starter</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <img src="./images/rps.png"/>
+    <h1 id="rps">ROCK PAPER SCISSORS!!</h1>
+    <h2 id='record'>wins-losses</h2>
 
-<body>
+    <button id='rock' onclick='newGame(0)'>ROCK</button>
+    <button id='paper' onclick='newGame(1)'>PAPER</button>
+    <button id='scissors' onclick='newGame(2)'>SCISSORS</button>
 
-<h1 id="rps">ROCK PAPER SCISSORS!!</h1>
+    <p id="message"></p>
+    <p id="computer"></p>
 
-<h1 id="message">Welcome!</h1>
-
-<h2 id='record'>wins-losses</h2>
-
-<button id='rock' onclick='newGame(0)'>ROCK</button>
-<button id='paper' onclick='newGame(1)'>PAPER</button>
-<button id='scissors' onclick='newGame(2)'>SCISSORS</button>
-
-<h3 id='computer'></h3>
-
-<script src="utils.js"></script>
-<script src="script.js"></script>
-
-</body>
-
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
